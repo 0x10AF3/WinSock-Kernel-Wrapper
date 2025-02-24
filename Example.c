@@ -1,3 +1,7 @@
+// THIS IS ONLY AN EXAMPLE OF HOW YOU CAN USE THE WSK WRAPPER 
+
+
+
 /*++
 
 Project Name:
@@ -16,13 +20,20 @@ Last Commit:
 
 // Includes
 
-#include "include/Global.h"
-#include "include/Nt.h"
+//#include "include/Global.h"
+//#include "include/Nt.h"
 
-#include "Memory/Memory.h"
-#include "Memory/Map/Map.h"
+//#include "Memory/Memory.h"
+//#include "Memory/Map/Map.h"
 
-#include "Socket/Socket.h"
+#include <ntifs.h>
+#include <ntddk.h>
+
+#include <windef.h>
+#include <ntintsafe.h>
+#include <ntstrsafe.h>
+
+#include "WSK/Socket.h"
 
 // Variables & Macros
 
